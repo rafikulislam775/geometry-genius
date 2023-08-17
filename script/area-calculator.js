@@ -10,3 +10,16 @@ function calculateTriangleArea() {
   const triangleArea = document.getElementById("triangle-area");
   triangleArea.innerHTML = area;
 }
+
+function calculateRectangleArea() {
+  const widthField = document.getElementById("rectangle-width").value;
+  const widthValue = parseFloat(widthField);
+  //   console.log(widthValue);
+  const lengthField = document.getElementById("rectangle-length").value;
+  const lengthValue = parseFloat(lengthField);
+  //   console.log(heightValue);
+  const area = widthValue * lengthValue;
+  //   console.log(area);
+  const rectangleArea = document.getElementById("rectangle-area");
+  rectangleArea.innerHTML = area;
+}

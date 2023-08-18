@@ -65,3 +65,10 @@ function setElementInnerText(id, area) {
   const element = document.getElementById(id);
   element.innerText = area;
 }
+//
+function calculateEllipseArea() {
+  const major = getInput("ellipse-major-redus");
+  const minor = getInput("ellipse-minor-redus");
+  const area = 3.1416 * major.value * minor.value;
+  setElementInnerText("ellipse-area", area);
+}
